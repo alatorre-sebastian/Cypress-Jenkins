@@ -6,7 +6,7 @@ describe('Prueba google', () => {
 
     it('Deberia mostrar prueba erronea', () => {
         cy.visit("https://www.google.com.mx/?hl=es")
-        cy.get("#APjFqb").should('be.visible')
+        cy.get("#APjFqb").should('not.be.visible')
 
     });
 });
